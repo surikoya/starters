@@ -5,7 +5,6 @@ Basic d3 project with:
 0. Requirejs for amd
 0. Gulp as Task runner
 0. Gulp tasks processed 
-
 	* gulp-jshint : 	Check quality of our JavaScript source files
 	* gulp-changed: 	Process through changed files
 	* gulp-minify-html:	Task to Minify html
