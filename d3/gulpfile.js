@@ -12,7 +12,8 @@ var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 
 var htmlSrc = './src/*.html',
-  htmlDst = './build';
+  htmlDst = './build',
+  cssSrc = './src/styles/*';
  
 // JS hint task
 gulp.task('jshint', function() {
@@ -39,11 +40,17 @@ gulp.task('scripts', function() {
 });
 
 // JS concat, strip debugging and minify
+gulp.task('copyStyles', function() {
+  gulp.src([cssSrc])
+    .pipe(gulp.dest('./build/styles/'));
+});
+
+// JS concat, strip debugging and minify
 gulp.task('copyScripts', function() {
   gulp.src(['./src/scripts/thirdparty/*.js'])
     .pipe(gulp.dest('./build/scripts/thirdparty/'));
 });
 
 // default gulp task
-gulp.task('default', ['jshint', 'htmlpage', 'scripts', 'copyScripts'], function() {
+gulp.task('default', ['jshint', 'htmlpage', 'scripts', 'copyScripts','copyStyles'], function() {
 });

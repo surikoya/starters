@@ -1,4 +1,4 @@
-requirejs(["/build/scripts/thirdparty/d3.js"], function(d3) {
+requirejs(["scripts/thirdparty/d3.js"], function(d3) {
     //This function is called when /scripts/thirdparty/d3.js is loaded.
 	var body = d3.select('body');	
 
