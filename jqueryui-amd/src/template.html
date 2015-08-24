@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jQuery UI starter project</title>
+		<link rel="stylesheet" href="css/thirdparty/jquery-ui.css">
+	</head>
+	<body>
+		<div id="toolbar" class="ui-widget-header ui-corner-all" style="font-size:62.5%;">
+			<button id="beginning">go to beginning</button>
+			<button id="rewind">rewind</button>
+			<button id="play">play</button>
+			<button id="stop">stop</button>
+			<button id="forward">fast forward</button>
+			<button id="end">go to end</button>
+
+			<input type="checkbox" id="shuffle"><label for="shuffle">Shuffle</label>
+
+			<span id="repeat">
+				<input type="radio" id="repeat0" name="repeat" checked="checked"><label for="repeat0">No Repeat</label>
+				<input type="radio" id="repeat1" name="repeat"><label for="repeat1">Once</label>
+				<input type="radio" id="repeatall" name="repeat"><label for="repeatall">All</label>
+			</span>
+		</div>
+		<script src="scripts/thirdparty/require.js" data-main="scripts/app.js"></script>		
+	</body>
+</html>
