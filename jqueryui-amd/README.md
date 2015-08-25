@@ -5,11 +5,11 @@ Setup
 
 0. Build tool - Gulp
 0. Directory layout
--src (source files - html)
++ src (source files - html)
 	+ css (css sources)
-	- scripts (scripts directory)
-		-app (application scripts)
-			+app.js (application script)
+	+ scripts (scripts directory)
+		+ app (application scripts)
+			+ app.js (application script)
 				
 To setup this project first install bower and gulp on nodejs.
 
@@ -26,16 +26,16 @@ run the command:
 >gulp
 
 Deployment structure that will be generated:
--build (final files - html)
-	- css (css sources)
-		- thirdparty (css of thirdparty libraries)
++ build (final files - html)
+	+ css (css sources)
+		+ thirdparty (css of thirdparty libraries)
 			+ jquery-ui.css (CSS of jquery, uses sommothness jquery theme)
-			- images (images required for thirdparties)
+			+ images (images required for thirdparties)
 				+ multiple gif and png files. 
-	- scripts (scripts directory)
-		- app (application scripts)
+	+ scripts (scripts directory)
+		+ app (application scripts)
 			+ app.js (application script)
-		- thirdparty (scripts required for thirdparty)
+		+ thirdparty (scripts required for thirdparty)
 			+ jquery.js 
 			+ jquery-ui.js
 			+ require.js
